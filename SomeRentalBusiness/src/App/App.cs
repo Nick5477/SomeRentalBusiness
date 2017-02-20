@@ -14,29 +14,14 @@ namespace App
 
     public class App
     {
-		//random comment LOL
-        private readonly IRentService _rentService;
-        private readonly IEmployeeService _employeeService;
-        private readonly IRepository<Client> _clientRepository;
-        private readonly IRepository<Employee> _employeeRepository;
-        private readonly IRepository<Reserve> _reserveRepository;
+		//random comment
         private readonly ICommandBuilder _commandBuilder;
         private readonly IQueryBuilder _queryBuilder;
 
         public App(
-            IRepository<Client> clientRepository,
-            IRepository<Employee> employeeRepository,
-            IRepository<Reserve> reserveRepository,
-            IEmployeeService employeeService,
-            IRentService rentService,
             ICommandBuilder commandBuilder,
             IQueryBuilder queryBuilder)
         {
-            _clientRepository = clientRepository;
-            _employeeRepository = employeeRepository;
-            _employeeService = employeeService;
-            _rentService = rentService;
-            _reserveRepository = reserveRepository;
             _commandBuilder = commandBuilder;
             _queryBuilder = queryBuilder;
         }
@@ -54,14 +39,16 @@ namespace App
             });
         }
 
-        public void AddRentPoint(Employee myEmployee,decimal money=10000)
+        public RentPoint AddRentPoint(Employee myEmployee,decimal money=10000)
         {
-            _commandBuilder.Execute(new AddRentPointCommandContext()
+            AddRentPointCommandContext context=new AddRentPointCommandContext()
             {
                 Employee = myEmployee,
                 Money = money
-            });
+            };
+            _commandBuilder.Execute(context);
 
+            return context.CreatedRentPoint;
         }
 
         public IEnumerable<Bike> GetBikes()
@@ -80,33 +67,75 @@ namespace App
 
         public Employee CreateEmployee(string surname, string firstname, string patronymic)
         {
-            Employee employee = new Employee(surname, firstname, patronymic);
-            _employeeRepository.Add(employee);
-            return employee;
-            //_employeeService.AddEmployee(surname, firstname, patronymic);
+            AddEmployeeCommandContext context = new AddEmployeeCommandContext()
+            {
+                FirstName = firstname,
+                Surname = surname,
+                Patronymic = patronymic
+            };
+            _commandBuilder.Execute(context);
+            return context.CreatedEmployee;
         }
 
         public Client CreateClient(string surname, string firstname, string patronymic)
         {
-            Client client = new Client(surname, firstname, patronymic);
-            _clientRepository.Add(client);
-            return client;
+            AddClientCommandContext context = new AddClientCommandContext()
+            {
+                Surname = surname,
+                FirstName = firstname,
+                Patronymic = patronymic
+            };
+            _commandBuilder.Execute(context);
+            return context.CreatedClient;
         }
 
         public void GetBikeInRent(Client client, Bike bike, Deposit deposit)
         {
-            _rentService.Take(client, bike, deposit);
+            _commandBuilder.Execute(new GetBikeInRentCommandContext()
+            {
+                Bike=bike,
+                Client = client,
+                Deposit = deposit
+            });
         }
 
         public void ReturnBike(Bike bike, RentPoint rentPoint, bool IsBroken)
         {
-            _rentService.Return(bike, rentPoint, IsBroken);
+            _commandBuilder.Execute(new ReturnBikeCommandContext()
+            {
+                Bike = bike,
+                RentPoint = rentPoint,
+                IsBroken = IsBroken
+            });
         }
 
         public void ReserveBike(Client client, Bike bike, DateTime endTime)
         {
-            Reserve reserve = new Reserve(client, bike, endTime);
-            _reserveRepository.Add(reserve);
+            _commandBuilder.Execute(new ReserveBikeCommandContext()
+            {
+                Client = client,
+                Bike = bike,
+                EndTime=endTime
+            });
+        }
+
+        public IEnumerable<Bike> GetBikesInRentPoint(RentPoint rentPoint)
+        {
+            return _queryBuilder
+                .For<IEnumerable<Bike>>()
+                .With(new RentPointCriterion()
+            {
+                RentPoint = rentPoint
+            });
+        }
+
+        public void MoveBike(Bike bike, RentPoint rentPoint)
+        {
+            _commandBuilder.Execute(new MoveBikeCommandContext()
+            {
+                Bike = bike,
+                RentPoint = rentPoint
+            });
         }
     }
 }

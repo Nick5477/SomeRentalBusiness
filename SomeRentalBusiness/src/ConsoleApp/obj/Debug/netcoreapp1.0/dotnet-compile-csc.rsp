@@ -7,8 +7,8 @@
 -debug:full
 -nostdlib
 -nologo
-"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\ConsoleApp\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\ConsoleApp\bin\Debug\netcoreapp1.0\ConsoleApp.dll"
+"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\ConsoleApp\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\ConsoleApp\bin\Debug\netcoreapp1.0\ConsoleApp.dll"
 -r:"C:\Users\User\.nuget\packages\Autofac\4.3.0\lib\netstandard1.1\Autofac.dll"
 -r:"C:\Users\User\.nuget\packages\Microsoft.CSharp\4.0.1\ref\netstandard1.0\Microsoft.CSharp.dll"
 -r:"C:\Users\User\.nuget\packages\Microsoft.VisualBasic\10.0.1\ref\netstandard1.1\Microsoft.VisualBasic.dll"
@@ -85,8 +85,8 @@
 -r:"C:\Users\User\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\User\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\User\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
--r:"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\App\bin\Debug\netstandard1.6\App.dll"
--r:"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Domain\bin\Debug\netstandard1.6\Domain.dll"
--r:"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\bin\Debug\netstandard1.6\Infrastructure.dll"
-"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\ConsoleApp\Program.cs"
-"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\ConsoleApp\Properties\AssemblyInfo.cs"
+-r:"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\App\bin\Debug\netstandard1.6\App.dll"
+-r:"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\bin\Debug\netstandard1.6\Domain.dll"
+-r:"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\bin\Debug\netstandard1.6\Infrastructure.dll"
+"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\ConsoleApp\Program.cs"
+"C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\ConsoleApp\Properties\AssemblyInfo.cs"

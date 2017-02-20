@@ -1,5 +1,5 @@
---temp-output:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\obj\Debug\netstandard1.6\
---out:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\bin\Debug\netstandard1.6\Infrastructure.dll
+--temp-output:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\obj\Debug\netstandard1.6\
+--out:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\bin\Debug\netstandard1.6\Infrastructure.dll
 --define:DEBUG
 --define:TRACE
 --define:NETSTANDARD1_6
@@ -60,20 +60,20 @@
 --reference:C:\Users\User\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\User\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\User\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---reference:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Domain\bin\Debug\netstandard1.6\Domain.dll
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Commands\AddBikeCommand.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Commands\AddRentPointCommand.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Commands\CommandBuilder.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Commands\ICommand.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Commands\ICommandBuilder.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Commands\ICommandFactory.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Properties\AssemblyInfo.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Queries\GetAllBikesQuery.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Queries\GetAllRentPointsQuery.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Queries\IQuery.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Queries\IQueryBuilder.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Queries\IQueryFactory.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Queries\IQueryFor.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\Queries\QueryFor.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\TypedFactory\TypedFactoryBase.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\TypedFactory\TypedFactoryExtensions.cs
+--reference:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\bin\Debug\netstandard1.6\Domain.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Commands\AddBikeCommand.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Commands\AddRentPointCommand.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Commands\CommandBuilder.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Commands\ICommand.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Commands\ICommandBuilder.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Commands\ICommandFactory.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Properties\AssemblyInfo.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Queries\GetAllBikesQuery.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Queries\GetAllRentPointsQuery.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Queries\IQuery.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Queries\IQueryBuilder.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Queries\IQueryFactory.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Queries\IQueryFor.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\Queries\QueryFor.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\TypedFactory\TypedFactoryBase.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\TypedFactory\TypedFactoryExtensions.cs

@@ -81,7 +81,7 @@ namespace ConsoleApp
             App app = container.Resolve<App>();
 
             Employee myEmployee = app.CreateEmployee("Nya", "Nyan", "Nyanyan");
-            app.AddRentPoint(myEmployee);
+            RentPoint rp=app.AddRentPoint(myEmployee);
 
             Employee otherEmployee = app.CreateEmployee("otherNya", "otherNyan", "otherNyanyan");
             app.AddRentPoint(otherEmployee);
@@ -90,7 +90,6 @@ namespace ConsoleApp
             Client clientWhoWantTakeReservedBike = app.CreateClient("aaa", "a", "aaaaa");
 
             Deposit deposit = new MoneyDeposit(5000);
-            RentPoint rp=new RentPoint(myEmployee,(new Safe()),(new CashBox(100)));
 
             app.AddBike("Кама", 50, 4500, rp);
             app.AddBike("Кама", 100,4500, rp);

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Domain.Commands;
 using Domain.Commands.Contexts;
+using Domain.Entities;
 using Domain.Services;
 
 namespace Infrastructure.Commands
@@ -17,7 +18,8 @@ namespace Infrastructure.Commands
         }
         public void Execute(AddRentPointCommandContext commandContext)
         {
-            _rentPointService.AddRentPoint(commandContext.Employee, commandContext.Money);
+            RentPoint rp=_rentPointService.AddRentPoint(commandContext.Employee, commandContext.Money);
+            commandContext.CreatedRentPoint = rp;
         }
     }
 }
