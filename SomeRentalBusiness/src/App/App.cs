@@ -14,6 +14,7 @@ namespace App
 
     public class App
     {
+		//random comment LOL
         private readonly IRentService _rentService;
         private readonly IEmployeeService _employeeService;
         private readonly IRepository<Client> _clientRepository;
