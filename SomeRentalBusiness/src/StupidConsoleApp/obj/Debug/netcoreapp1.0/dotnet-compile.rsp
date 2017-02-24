@@ -1,5 +1,5 @@
---temp-output:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\StupidConsoleApp\obj\Debug\netcoreapp1.0\
---out:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\StupidConsoleApp\bin\Debug\netcoreapp1.0\StupidConsoleApp.dll
+--temp-output:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\StupidConsoleApp\obj\Debug\netcoreapp1.0\
+--out:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\StupidConsoleApp\bin\Debug\netcoreapp1.0\StupidConsoleApp.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -89,8 +89,8 @@
 --reference:C:\Users\User\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\User\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\User\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---reference:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\App\bin\Debug\netstandard1.6\App.dll
---reference:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Domain\bin\Debug\netstandard1.6\Domain.dll
---reference:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\Infrastructure\bin\Debug\netstandard1.6\Infrastructure.dll
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\StupidConsoleApp\Program.cs
-C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness-master\SomeRentalBusiness-master\src\StupidConsoleApp\Properties\AssemblyInfo.cs
+--reference:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\App\bin\Debug\netstandard1.6\App.dll
+--reference:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\bin\Debug\netstandard1.6\Domain.dll
+--reference:C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Infrastructure\bin\Debug\netstandard1.6\Infrastructure.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\StupidConsoleApp\Program.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\StupidConsoleApp\Properties\AssemblyInfo.cs

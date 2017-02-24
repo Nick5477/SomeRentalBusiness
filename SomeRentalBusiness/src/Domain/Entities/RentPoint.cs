@@ -10,7 +10,7 @@
     {
         protected readonly IList<Bike> _bikes = new List<Bike>();
 
-        public RentPoint(Employee employee, Safe safe, CashBox cashbox)
+        public RentPoint(string name, Employee employee, Safe safe, CashBox cashbox)
         {
             if (employee == null)
                 throw new ArgumentNullException(nameof(employee));
@@ -20,13 +20,15 @@
 
             if (cashbox == null)
                 throw new ArgumentNullException(nameof(cashbox));
-
+            if (string.IsNullOrWhiteSpace(name))
+                throw new ArgumentNullException(nameof(name));
+            Name = name;
             Employee = employee;
             Safe = safe;
             CashBox = cashbox;
         }
 
-
+        public string Name { get; protected set; }
         public readonly Employee Employee;// { get; protected set; }
         public Safe Safe;
         public CashBox CashBox;
@@ -47,6 +49,11 @@
                 throw new ArgumentNullException(nameof(bike));
 
             _bikes.Remove(bike);
+        }
+
+        public override string ToString()
+        {
+            return string.Format("Имя точки проката: {0}", Name);
         }
 
         //protected internal void SetEmployee(Employee employee)

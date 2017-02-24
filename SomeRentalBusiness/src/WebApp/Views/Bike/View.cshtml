@@ -1,0 +1,20 @@
+﻿@using Domain.Entities; 
+@model Bike
+@{
+    ViewData["Title"] = "Страница байка";
+}
+<h3>Название байка: @Model.Name</h3>
+<h3>Цена проката за час: @Model.HourCost</h3>
+<h3>Цена байка: @Model.Cost</h3>
+<h2>Данные для заполнения:</h2>
+<form method="post" action="~/Bike/Take/@Model.Name">
+    <label>Фамилия:</label><br />
+    <input type="text" name="surname" /><br />
+    <label>Имя:</label><br />
+    <input type="text" name="firstname" /><br />
+    <label>Отчество:</label><br />
+    <input type="text" name="patronymic" /><br />
+    <label>Cумма депозита:</label><br />
+    <input type="number" name="money" /><br />
+    <input type="submit" value="Взять в прокат"/>
+</form>

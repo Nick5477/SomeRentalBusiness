@@ -1,0 +1,10 @@
+﻿@using Domain.Entities
+@model IEnumerable<RentPoint>
+@{
+    ViewData["Title"] = "Список точек проката";
+}
+<h3>Список точек проката</h3>
+@foreach (RentPoint rentPoint in Model)
+{
+    <p><a href="~/RentPoint/@rentPoint.Name">@rentPoint.ToString()</a></p>
+}

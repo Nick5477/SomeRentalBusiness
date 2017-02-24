@@ -13,5 +13,6 @@ namespace Domain.Commands.Contexts
         public decimal HourCost { get; set; }
         public decimal Cost { get; set; }
         public RentPoint RentPoint { get; set; }
+        public Bike CreatedBike { get; set; }
     }
 }

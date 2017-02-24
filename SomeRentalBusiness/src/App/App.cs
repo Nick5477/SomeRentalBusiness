@@ -39,10 +39,11 @@ namespace App
             });
         }
 
-        public RentPoint AddRentPoint(Employee myEmployee,decimal money=10000)
+        public RentPoint AddRentPoint(string name,Employee myEmployee,decimal money=10000)
         {
             AddRentPointCommandContext context=new AddRentPointCommandContext()
             {
+                Name=name,
                 Employee = myEmployee,
                 Money = money
             };

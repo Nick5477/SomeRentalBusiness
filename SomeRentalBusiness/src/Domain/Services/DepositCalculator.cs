@@ -6,7 +6,7 @@
     {
         public decimal Calculate(Bike bike)
         {
-            return 100 * bike.HourCost;
+            return 10 * bike.HourCost;
         }
     }
 }

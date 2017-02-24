@@ -81,10 +81,10 @@ namespace ConsoleApp
             App app = container.Resolve<App>();
 
             Employee myEmployee = app.CreateEmployee("Nya", "Nyan", "Nyanyan");
-            RentPoint rp=app.AddRentPoint(myEmployee);
+            RentPoint rp=app.AddRentPoint("Компрос",myEmployee);
 
             Employee otherEmployee = app.CreateEmployee("otherNya", "otherNyan", "otherNyanyan");
-            app.AddRentPoint(otherEmployee);
+            app.AddRentPoint("Ленина",otherEmployee);
 
             Client client = app.CreateClient("Keke", "Ke", "Kekekeke");
             Client clientWhoWantTakeReservedBike = app.CreateClient("aaa", "a", "aaaaa");

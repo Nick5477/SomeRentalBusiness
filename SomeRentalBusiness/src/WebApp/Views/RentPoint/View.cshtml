@@ -1,0 +1,10 @@
+﻿@using Domain.Entities
+@model RentPoint
+@{
+    ViewData["Title"] = "Страница точки проката";
+}
+<h3>Название точки проката: @(((RentPoint)Model).Name)</h3>
+<h3>Денег в кассе: @(((RentPoint)Model).CashBox.Money)</h3>
+<h3>Работник: @(((RentPoint)Model).Employee.FullName)</h3>
+<br>
+<p><a href="~/RentPoint/GetAllBikesOnRentPoint/@(((RentPoint)Model).Name)">Байки на этой точке проката</a></p>

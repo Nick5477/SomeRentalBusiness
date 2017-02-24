@@ -18,7 +18,7 @@ namespace Infrastructure.Commands
         }
         public void Execute(AddRentPointCommandContext commandContext)
         {
-            RentPoint rp=_rentPointService.AddRentPoint(commandContext.Employee, commandContext.Money);
+            RentPoint rp=_rentPointService.AddRentPoint(commandContext.Name,commandContext.Employee, commandContext.Money);
             commandContext.CreatedRentPoint = rp;
         }
     }

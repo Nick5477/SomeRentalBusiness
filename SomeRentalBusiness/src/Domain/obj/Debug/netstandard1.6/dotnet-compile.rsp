@@ -56,8 +56,14 @@
 --reference:C:\Users\User\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\User\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Commands\Contexts\AddBikeCommandContext.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Commands\Contexts\AddClientCommandContext.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Commands\Contexts\AddEmployeeCommandContext.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Commands\Contexts\AddRentPointCommandContext.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Commands\Contexts\GetBikeInRentCommandContext.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Commands\Contexts\ICommandContext.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Commands\Contexts\MoveBikeCommandContext.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Commands\Contexts\ReserveBikeCommandContext.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Commands\Contexts\ReturnBikeCommandContext.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Entities\Bike.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Entities\CashBox.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Entities\Client.cs
@@ -75,6 +81,8 @@ C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRenta
 C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Properties\AssemblyInfo.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Queries\Criteria\EmptyCriterion.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Queries\Criteria\ICriterion.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Queries\Criteria\NameCriterion.cs
+C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Queries\Criteria\RentPointCriterion.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Repositories\IRepository.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Repositories\Repository.cs
 C:\Users\User\Documents\Visual Studio 2015\Projects\SomeRentalBusiness\SomeRentalBusiness\src\Domain\Services\BikeNameVerifier.cs

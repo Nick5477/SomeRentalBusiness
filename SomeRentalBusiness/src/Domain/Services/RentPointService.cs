@@ -22,7 +22,7 @@ namespace Domain.Services
 
         }
 
-        public RentPoint AddRentPoint(Employee employee, decimal money)
+        public RentPoint AddRentPoint(string name,Employee employee, decimal money)
         {
             if (employee == null)
                 throw new ArgumentNullException(nameof(employee));
@@ -33,7 +33,7 @@ namespace Domain.Services
             CashBox cashbox = new CashBox(money);
             Safe safe = new Safe();
 
-            RentPoint rentPoint = new RentPoint(employee, safe, cashbox);
+            RentPoint rentPoint = new RentPoint(name,employee, safe, cashbox);
             _rentPointRepository.Add(rentPoint);
 
             return rentPoint;
@@ -42,6 +42,11 @@ namespace Domain.Services
         public void CloseRentPoint(RentPoint rentPoint)
         {
             throw new NotImplementedException();
+        }
+
+        public RentPoint GetRentPoint(string name)
+        {
+            return _rentPointRepository.All().SingleOrDefault(x => x.Name == name);
         }
     }
 }

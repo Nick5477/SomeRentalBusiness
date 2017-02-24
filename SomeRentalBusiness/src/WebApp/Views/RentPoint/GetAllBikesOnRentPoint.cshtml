@@ -1,0 +1,10 @@
+﻿@using Domain.Entities
+@model IEnumerable<Bike>
+@{
+    ViewData["Title"] = "Страница точки проката";
+}
+<h2>@ViewData["Message"]</h2>
+@foreach (Bike bike in Model)
+{
+    <p><a href="~/Bike/@bike.Name">@bike.Name</a></p>
+}

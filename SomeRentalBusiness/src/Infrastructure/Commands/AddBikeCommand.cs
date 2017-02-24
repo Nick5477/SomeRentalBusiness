@@ -25,7 +25,9 @@ namespace Infrastructure.Commands
             if (!_bikeNameVerifier.IsFree(commandContext.Name))
                 throw new InvalidOperationException("Bike with same name already exists");
 
-            _bikeService.AddBike(commandContext.Name,commandContext.HourCost,commandContext.Cost);
+            commandContext.CreatedBike=_bikeService.AddBike(commandContext.Name,commandContext.HourCost,commandContext.Cost);
+
+            _bikeService.MoveBike(commandContext.CreatedBike,commandContext.RentPoint);
         }
     }
 }

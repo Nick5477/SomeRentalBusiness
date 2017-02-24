@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Add Employee";
+}
+<form method="post" action="~/RentPoint/Add">
+    <label>Название точки проката:</label><br />
+    <input type="text" name="name" /><br />
+    <label>Фамилия работника:</label><br />
+    <input type="text" name="surname" /><br />
+    <label>Имя работника:</label><br />
+    <input type="text" name="firstname" /><br />
+    <label>Отчество работника:</label><br />
+    <input type="text" name="patronymic" /><br />
+    <label>Количество денег в кассе:</label><br />
+    <input type="number" name="money" /><br />
+    <input type="submit" value="Отправить" />
+</form>
