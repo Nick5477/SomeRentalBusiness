@@ -56,5 +56,29 @@ namespace WebApp.Controllers
                 clientCommandContext.CreatedClient.FullName, name, money.ToString());
             return View();
         }
+
+        public IActionResult ReturnBikePage()
+        {
+            return View();
+        }
+
+        public IActionResult Return(string bikeName, string rentPointName)
+        {
+            RentPoint rentPoint = _queryBuilder.For<RentPoint>().With(new NameCriterion()
+            {
+                Name = rentPointName
+            });
+            Bike bike = _queryBuilder.For<Bike>().With(new NameCriterion()
+            {
+                Name = bikeName
+            });
+            _commandBuilder.Execute(new ReturnBikeCommandContext()
+            {
+                Bike = bike,
+                RentPoint = rentPoint,
+                IsBroken = false
+            });
+            return View();
+        }
     }
 }

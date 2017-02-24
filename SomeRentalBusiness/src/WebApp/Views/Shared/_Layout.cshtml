@@ -32,9 +32,10 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="RentPoint" asp-action="GetAllRentPoints">Get All Rentpoints</a></li>
-                    <li><a asp-area="" asp-controller="Employee" asp-action="AddEmployeeIndex">Add Employee</a></li>
-                    <li><a asp-area="" asp-controller="RentPoint" asp-action="AddRentPointIndex">Add Rentpoint</a></li>
+                    <li><a href="~/RentPoints">Все точки проката</a></li>
+                    <li><a asp-area="" asp-controller="Employee" asp-action="AddEmployeeIndex">Добавить сотрудника</a></li>
+                    <li><a asp-area="" asp-controller="RentPoint" asp-action="AddRentPointIndex">Добавить точку проката</a></li>
+                    <li><a asp-area="" asp-controller="Bike" asp-action="ReturnBikePage">Вернуть байк</a></li>
                 </ul>
             </div>
         </div>

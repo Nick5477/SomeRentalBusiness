@@ -93,7 +93,7 @@ namespace WebApp.Controllers
             return View();
         }
 
-        public IActionResult GetAllRentPoints()
+        public IActionResult List()
         {
             IEnumerable<RentPoint> listRentPoints = 
                 _queryBuilder
